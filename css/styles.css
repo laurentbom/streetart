@@ -1,0 +1,106 @@
+body{
+  font-family: "Raleway", Arial, sans-serif;
+}
+header{
+  padding: 24px 16px;
+  
+}
+.main-nav{
+  max-width: 1500px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.main-nav a{
+  padding: 8px 16px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.774);
+  font-size: 24px;
+}
+.main-nav a:first-child{
+  text-transform: uppercase;
+}
+.main-nav a:hover{
+  background-color: #ccc;
+}
+
+
+.works img{
+  width: 100%;
+  display: flex;
+}
+
+.about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #F1F1F1;
+  padding-top: 60px;
+}
+.about h2{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+.about img{
+  width: 300px;
+  margin-bottom: 32px;
+}
+.about__txt{
+  font-size: 15px;
+  line-height: 22.5px;
+  width: 300px;
+}
+.about__txt_red{
+  color: #e91e63;
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+label{
+  font-size: 15px;
+  font-weight: 700;
+}
+input{
+  padding: 8px;
+  margin-bottom: 30px;
+}
+[type="submit"]{
+  color: white;
+  background-color: #616161;
+  border: 0;
+  cursor: pointer;
+}
+[type="submit"]:hover{
+  color: black;
+  background-color: #ccc;
+}
+.about__bottom{
+  padding: 15px 0 40px;
+  font-size: 15px;
+}
+.about__bottom a{
+  color: black;
+}
+
+/***************Desktop*****************/
+@media screen and (min-width:600px){
+  .works{
+    display: flex;
+    flex-direction: row;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+  .about__txt{
+    width: 60%;
+  }
+  form{
+    width: 60%;
+  }
+}
